@@ -9,17 +9,17 @@
 
 int check_cycle(listint_t *list)
 {
-	listint_t *s = list;
+	listint_t *p = list;
 	listint_t *f = list;
 
 	if (!list)
 		return (0);
 
-	while (s && f && f->next)
+	while (p && f && f->next)
 	{
-		s = s->next;
+		p = p->next;
 		f = f->next->next;
-		if (s == f)
+		if (p == f)
 			return (1);
 	}
 	return (0);
