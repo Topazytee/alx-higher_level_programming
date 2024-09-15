@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-for m in range(9):
-    for n in range(m + 1, 10):
-        if m != 8:
-            print("{}{}".format(m, n), end=", ")
+for i in range(9):
+    for j in range(i + 1, 10):
+        if i != 8:
+            print("{}{}".format(i, j), end=", ")
         else:
-            print("{}{}".format(n, n))
+            print("{}{}".format(i, j))
